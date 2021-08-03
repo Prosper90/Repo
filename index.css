@@ -10,9 +10,18 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 50px;
+
 }
+
+.main-contain {
+  color: #FFA500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
 
 
 .header {
@@ -25,6 +34,23 @@ body {
   margin-bottom: 30px;
 }
 
+.header .img-contain {
+  margin-left: 30px;
+  width: 100px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.header .container {
+  align-self: center;
+}
+
+
+img {
+  width: 100%;
+ height: auto;
+ border-radius: 20px;
+}
 
 .section {
   display: flex;
@@ -55,20 +81,63 @@ body {
   background-color: #000;
 }
 
-.section-2 {
-  display: flex;
-  flex-direction: column;
-  margin-top: 40px;
-}
+
 
 .show-projects {
   display: flex;
+  margin-top: 40px;
   margin-bottom: 40px;
-  width: 100%;
-  height: 30vh;
-  background-color: green;
+   width: 100%;
+    height: 20vh;
+    margin-left: 30px;
+
+}
+
+
+.show-projects ::webkit-scrollbar {
+  width: 10px;
+}
+
+#show-project-id {
+
 }
 
 .show-projects .projects-contain {
-  
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ width: inherit;
+ height: 30vh;
+ overflow: auto;
+ overflow-y: hidden;
+ white-space: nowrap;
+
+}
+
+.projects-contain .project {
+width: 30%;
+height: 23vh;
+background-color: #FFA500;
+margin-left: 13px;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;
+flex: 0 0 auto;
+}
+
+
+
+
+
+.footer {
+  margin-top: 100px;
+  max-width: 100%;
+  height: 100
+}
+
+.footer .message {
+  border-right: 5px solid #FFA500;
+}
+
+.footer .col-6{
+  color: #fff;
 }
