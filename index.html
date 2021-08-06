@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>My Portforlio</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.css">
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.min.css">
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-reboot.css">
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
 
 </head>
@@ -33,7 +37,15 @@
     <!--About-me and Skills-->
     <div class="section">
       <!--About-me-->
-      <div class="about-me">
+      <div class="row about-me">
+
+       <div class="overlay-con col-lg-3 col-md-2 col-12">
+
+          <div id="color-overlay"></div>
+       </div>
+
+        <div class="col-lg-9 col-md-10 col-12 mb-5">
+          <h3>Lorem ipsum.</h3>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, modi. Minima, amet.
         Vitae voluptatem, aliquam, placeat, nemo non ipsam veritatis unde eligendi tempora,
         at dignissimos voluptatibus? Iure nisi assumenda aliquid,
@@ -41,13 +53,52 @@
         dolorum, qui blanditiis voluptate corrupti laboriosam tempora. Molestiae,
          suscipit incidunt ullam ipsa rerum unde pariatur quas nam ut,
          mollitia dolorem deserunt impedit totam est modi dolor saepe soluta!
+         </div>
+
+         <div class="col-6 mt-5">
+           <h5>Lorem ipsum.</h5>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+           Eaque unde repellendus, dolor veniam labore ratione.
+         </div>
+
+         <div class="col-6">
+           <h5>Lorem ipsum.</h5>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam itaque,
+            deleniti repellat qui hic dicta!
+          </div>
       </div>
 
        <!--Skills-->
-      <div class="skills">
+      <div class="skills ">
         <h3 id="skills-id">Skills</h3>
 
-        <div class="techiworkwith">
+        <div class="techiworkwith row ">
+
+          <div class="front col-12 d-flex flex-column">
+            <small>Front-end</small>
+            <div class="d-flex justify-content-around">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3"></i>
+              <i class="fab fa-bootstrap"></i>
+              <i class="fab fa-react"></i>
+              <i class="fab fa-js"></i>
+            </div>
+          </div>
+
+
+          <div class="back col-12 d-flex flex-column">
+            <small>Back-end and others</small>
+            <div class="d-flex justify-content-around">
+              <i class="fab fa-node"></i>
+              <i class="fas fa-leaf"></i>
+              <i class="fab fa-github-square"></i>
+              <i class="fab fa-git"></i>
+              <i class="fab fa-java"></i>
+            </div>
+          </div>
+
+
+
 
         </div>
       </div>
@@ -57,39 +108,46 @@
     <!--Projects and Contacts-->
 
      <!--Projects-->
-    <div class="show-projects">
-      <h3 id="show-project-id">Show Projects</h3>
+    <div class="show-projects d-flex flex-column">
 
-         <div class="projects-contain">
+      <h3 class="" id="show-project-id">Show Projects</h3>
 
-        <div class="project">
 
-        </div>
+<!--Projects container-->
+         <div class="row projects-contain">
 
-        <div class="project">
 
-        </div>
 
-        <div class="project">
+        <div class="project col-4">
 
         </div>
 
-        <div class="project">
+        <div class="project col-3">
 
         </div>
 
-        <div class="project">
+        <div class="project col-3">
 
         </div>
 
-        <div class="project">
+        <div class="project col-3">
 
         </div>
 
+        <div class="project col-3">
+
         </div>
+
+        <div class="project col-3">
+
+        </div>
+
+
+        </div>
+      <!--end of Projects container-->
 
     </div>
-
+ <!--end of Projects-->
 
 
 
@@ -97,37 +155,54 @@
 
 
    <!--Footer-->
-     <div class="row footer ">
-         <div class="col-6 d-flex justify-content-center pt-3 message">
-           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, laborum numquam blanditiis provident, aspernatur molestiae.
-         </div>
+     <div class="row footer">
+       <!--Fist div col-->
+         <div class="col-lg-6 col-md-6 col-12 d-flex justify-content-start pt-3 message">
 
-         <div class="col-6 d-flex flex-column justify-content-center">
-           <div class="check">
+           <form class="">
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Email address</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Subject</label>
+      <input type="text" class=" form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Message</label>
+      <textarea class=" form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+     <button type="submit" class="sub-btn btn btn-primary">Submit</button>
+  </form>
+
+         </div>
+      <!--end of Fist div col-->
+
+
+         <div class="col-lg-6 col-md-6 col-12 d-flex flex-column justify-content-center for-contact">
+           <div class="check text-center ">
  <h4>Contact Me</h4>
- </br>
- <a class="button-contact" href="#deal"><i class="fas fa-id-badge"></i></a>
 </div>
 
 
- <div class="contact-div-container">
- <div class="contact-div" id="deal">
+ <div class="contact-div-container p-2">
 
 
- <a class="btn btn-outline-secondary contact mobile" href="mailto:Woxartz@gmail.com" class="btn-default contact-details"><i class="far fa-envelope"></i> Send a mail</a>
+ <a class="btn btn-outline-secondary contact mobile" href="mailto:Onyekosorprosper@gmail.com" class="btn-default contact-details"><i class="far fa-envelope"></i> mail</a>
 
 <a class="btn btn-outline-secondary contact mobile" href="https://www.instagram.com/_woxstudioart_/" class="btn-default contact-details"><i class="fab fa-instagram"></i> Instagram</a>
 
  <a class="btn btn-outline-secondary contact mobile" href="tel:+2348133150824" class="btn-default contact-details"><i class="fab fa-linkedin-in"></i> Linkedin</a>
 
- <a class="btn btn-outline-secondary contact mobile" href="https://www.fiverr.com/share/dNR4g6" class="btn-default contact-details">
-   <img src="https://www.fiverr.com/news/earnings-fourth-quarter-2020" alt="fiverr"> fiverr
+ <a class="btn btn-outline-secondary contact mobile" href="https://www.fiverr.com/users/prosperonyekoso/manage_gigs" class="btn-default contact-details">
+   <img class="footer-img" src="Img/fiverr.png" alt="fiverr"> fiverr
  </a>
 
- </div>
 </div>
 
-   <div class="pt-4">
+   <div class="mt-2 pt-4 text-center">
     copyright @ Prosper
     </div>
          </div>
@@ -135,5 +210,6 @@
 <script type="text/javascript" src="/index.js"></script>
 <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.js"></script>
 <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </body>
 </html>

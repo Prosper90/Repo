@@ -9,8 +9,7 @@ body {
   color: #FFA500;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-
+  font-family: 'Poppins', sans-serif;
 }
 
 .main-contain {
@@ -52,6 +51,25 @@ img {
  border-radius: 20px;
 }
 
+
+ .overlay-con{
+   position: relative;
+   background-image: url("img/Twitterimage.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius: 20px;
+ }
+
+#color-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: black;
+   opacity: 0.6;
+}
+
 .section {
   display: flex;
   flex-direction: column;
@@ -79,6 +97,14 @@ img {
   width: inherit;
   border-radius: 20px;
   background-color: #000;
+  color: #fff;
+  font-size: 36px;
+  padding: 10px;
+}
+
+small{
+  font-size: 10px;
+  margin-bottom: 5px;
 }
 
 
@@ -94,8 +120,8 @@ img {
 }
 
 
-.show-projects ::webkit-scrollbar {
-  width: 10px;
+.show-projects scrollbar {
+
 }
 
 #show-project-id {
@@ -103,35 +129,33 @@ img {
 }
 
 .show-projects .projects-contain {
- display: flex;
- justify-content: space-around;
- align-items: center;
- width: inherit;
- height: 30vh;
- overflow: auto;
- overflow-y: hidden;
- white-space: nowrap;
 
 }
 
 .projects-contain .project {
-width: 30%;
-height: 23vh;
-background-color: #FFA500;
-margin-left: 13px;
-border-top-left-radius: 20px;
-border-bottom-right-radius: 20px;
-flex: 0 0 auto;
+
 }
 
+.form-control{
+background: transparent;
+color: #000;
+border: 1px solid #FFA500;
+margin: 0;
+padding: 0;
+border-top: 0px;
+border-left: 0px;
+border-right: 0px;
+width: 70vh;
+}
 
-
-
+.sub-btn{
+  background-color: #FFA500;
+}
 
 .footer {
   margin-top: 100px;
-  max-width: 100%;
-  height: 100
+  width: 100%;
+  height: 100%;
 }
 
 .footer .message {
@@ -140,4 +164,148 @@ flex: 0 0 auto;
 
 .footer .col-6{
   color: #fff;
+}
+
+.footer-img{
+  width: 20px;
+  height: 20px;
+}
+
+.contact-div-container{
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+
+  .section .skills {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    background-color: #FFA500;
+    color: #000;
+     width: 100%;
+     height: 30vh;
+     align-self: flex-end;
+     padding: 10px;
+     border-radius: 20px;
+  }
+
+  #skills-id {
+    align-self: center;
+  }
+
+  .section .techiworkwith {
+    width: auto;
+    border-radius: 20px;
+    background-color: #000;
+    color: #fff;
+    font-size: 36px;
+    padding: 10px;
+  }
+
+
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer .for-contact{
+    padding-left: 100px;
+  }
+
+  .contact-div-container{
+    padding: 0px;
+  }
+
+
+  .footer .message {
+    border-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    margin : 0;
+    padding: 0;
+
+  }
+
+  body {
+    background-color: #000;
+    color: #FFA500;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+  .header {
+    background-color: #FFA500;
+    color: #000;
+    width: 50%;
+    height: 25%;
+    display: flex;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+
+  .header .img-contain {
+    margin-left: 30px;
+    width: 100px;
+    height: auto;
+    border-radius: 20px;
+  }
+
+
+
+  .section .skills {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    background-color: #FFA500;
+    color: #000;
+     width: 100%;
+     height: 30vh;
+     align-self: flex-end;
+     padding: 10px;
+     border-radius: 20px;
+  }
+
+  #skills-id {
+    align-self: center;
+  }
+
+  .section .techiworkwith {
+    width: auto;
+    border-radius: 20px;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+
+
+
+
+
+
+
+  .footer .for-contact{
+    padding-left: 0px;
+  }
+
+  .footer .message {
+    border-right: 0px;
+  }
+
+
 }
