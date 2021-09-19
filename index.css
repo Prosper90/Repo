@@ -9,8 +9,6 @@ body {
   background-size: cover; /* or contain depending on what you want */
   background-position: center center;
   background-repeat: no-repeat;
-  width: 100%;
-  height:100%;
   color: #FFA500;
   display: flex;
   flex-direction: column;
@@ -303,13 +301,15 @@ form{
   }
 
   body {
-    background-color: #000;
+    background-image: url("img/forestbackground9.jpg");
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
     color: #FFA500;
     display: flex;
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
   }
-
 
   .header {
     background-color: #FFA500;
